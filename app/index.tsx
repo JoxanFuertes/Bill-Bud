@@ -11,7 +11,7 @@ import ExpenseRelevance from '@/Src/Views/ExpenseRelevance';
 import AddIncome from '@/Src/Views/AddIncome';
 import AddIncomeCategory from '@/Src/Views/AddIncomeCategory';
 import IncomeRelevance from '@/Src/Views/IncomeRelevance';
-import { View, StyleSheet } from 'react-native';
+
 
 
 
