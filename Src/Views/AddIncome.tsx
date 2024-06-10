@@ -3,12 +3,12 @@ import GenericButton from "../Components/GenericButton";
 import GenericTitle from "../Components/GenericTitle";
 import StyleView from "../Styles/ViewStyle";
 
-export default function Home({navigation} : any) {
+export default function AddIncome({navigation} : any) {
     /* constants */
-    const titleText = "Home"
-    const titleButton = "ExpenseRelevance"
-    const viewButtonName = "ExpenseRelevance"
-
+    const titleText = "AddIncome"
+    const titleButton = "AddExpenseCategory"
+    const viewButtonName = "AddExpenseCategory"
+    
     return (
         <View style={StyleView.view}>
             <GenericTitle titleText = {titleText}/>

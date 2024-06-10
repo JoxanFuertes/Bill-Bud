@@ -1,11 +1,17 @@
-import React from "react";
-
+import { View } from "react-native";
+import GenericButton from "../Components/GenericButton";
 import GenericTitle from "../Components/GenericTitle";
+import StyleView from "../Styles/ViewStyle";
 
-export default function AddExpense() {
+export default function AddExpense({navigation} : any) {
     /* constants */
-    const titleText = "Expenses Section"
+    const titleText = "AddExpense"
+    const titleButton = "IncomeRelevance"
+    const viewButtonName = "IncomeRelevance"
     return (
-      <GenericTitle titleText = {titleText}/>
+        <View style={StyleView.view}>
+            <GenericTitle titleText = {titleText}/>
+            <GenericButton navigation={navigation} titleButton={titleButton} viewButtonName={viewButtonName}/>
+        </View>
     );
-  }
+};
