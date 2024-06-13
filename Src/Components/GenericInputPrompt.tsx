@@ -1,21 +1,24 @@
+import { useState } from "react";
 import { Button, TextInput, View, Text} from "react-native";
-
+import styles from "../Styles/Styles";
 
 export default function GenericInputPrompt(propos: any){
 
-    const handlePress = () => {
-        propos.setSubmitedTextPrompt(propos.textPrompt)
-    };
-
+    const [submitedText, setSubmitedText] = useState("")
     return(
-        <View>
+        <View style={styles.promptContainer}>
             <TextInput
                 placeholder={propos.placeholderPrompt}
-                value={propos.textPrompt}
-                onChangeText={propos.setTextPrompt}
+                placeholderTextColor={'#E5d8c8'}
+                value={submitedText}
+                onChangeText={setSubmitedText}
+                style={styles.text}
             />
-            <Button title={propos.buttonTitlePrompt} onPress={handlePress}/>
-            {propos.submitedTextPrompt ? <Text>{propos.submitedTextPrompt}</Text> : null}
+            <Button title={"submit"}
+            onPress={() => {
+            propos.handlePress(submitedText)}}
+            />
+            {submitedText ? <Text>{submitedText}</Text> : null}
         </View>    
     )
 };

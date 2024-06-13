@@ -1,7 +1,7 @@
 import { View } from "react-native";
 import GenericButton from "../Components/GenericButton";
 import GenericTitle from "../Components/GenericTitle";
-import StyleView from "../Styles/ViewStyle";
+import StyleView from "../Styles/Styles";
 
 export default function AddIncomeCategory({navigation} : any) {
     /* constants */

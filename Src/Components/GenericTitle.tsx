@@ -1,17 +1,6 @@
 import React from "react";
-import { View, Text, StyleSheet} from "react-native";
-
-const styles = StyleSheet.create({
-    titleText : {
-        fontFamily: "Franklin Gothic Demi",
-        fontWeight: "bold",
-        color : "white",
-        fontSize: 30,
-    },    
-    container : {
-        alignItems: "center"
-    }
-});
+import { View, Text} from "react-native";
+import styles from "../Styles/Styles";
 
 export default function GenericTitle(props: any){
     return (

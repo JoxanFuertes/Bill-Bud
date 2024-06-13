@@ -1,4 +1,5 @@
-import { Button, Image, StyleSheet, TouchableOpacity, View } from "react-native";
+import {Image, TouchableOpacity, View } from "react-native";
+import styles from "../Styles/Styles"
 
 interface GenericButtonProps {
     titleButton: string;
@@ -6,22 +7,9 @@ interface GenericButtonProps {
     navigation: any; // Ideally, you should use the proper type from react-navigation
 }
 
-const styles = StyleSheet.create({
-    buttonImage : {
-        aspectRatio : 1,
-        width: 60,
-        height: 60,
-    },
-    container : {
-        alignItems: "flex-end",
-        paddingRight : 20,
-        paddingTop : 80,
-    }
-});
-
 export default function GenericButton (propos: any){
     return (
-        <View style={styles.container}>
+        <View style={styles.buttonImageContainer}>
             <TouchableOpacity 
             onPress={() => propos.navigation.navigate(propos.viewButtonName)}
             >
