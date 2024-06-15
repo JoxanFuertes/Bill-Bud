@@ -1,38 +1,39 @@
 import { View } from "react-native";
-import GenericButton from "../Components/GenericButton";
+import GenericButton from "../Components/GenericAddButton";
 import GenericTitle from "../Components/GenericTitle";
 import styles from "../Styles/Styles";
-import GenericInputPrompt from "../Components/GenericInputPrompt";
 
-/* I can ask for user input, now is time for designing all views to receive data
-    bf creating the data base */
+/* 
 
-/* constants */
-    /* for title */
-const titleText = "Home";
-    /* for button */
-const titleButton = "ExpenseRelevance";
-const viewButtonName = "ExpenseRelevance";
-    /* for prompt */
+1) create a combo box for category
+2) make all combo box elements selectable, but the last one
+    opens another window
+3) in expense relevance view: a list for all categories each of each has
+ drag and drop capabilities, order can be altered, color changes according to
+ position and if you leave an item pressed you see an option to delete.
+
+*/
+
+/* for prompt */
 const placeholderPrompt = "Enter the planet we will visit first ...";
 
+const title = "Home";
+const subtitle1 = "Expenses";
+const subtitle2 = "Income";
 
 export default function Home({navigation} : any) {
-
-    const handlePress = (submitedTextPrompt : string) => {
-        console.log("El astronauta quiere ir a: ", submitedTextPrompt)
-    };
     return (
         <View style={styles.view}>
-            <GenericTitle titleText = {titleText}/>
+            <GenericTitle titleText = {title} alignment="center"/>
+            <GenericTitle titleText = {subtitle1} alignment="left"/>
             <GenericButton
             navigation={navigation}
-            titleButton={titleButton}
-            viewButtonName={viewButtonName}/>
-{            <GenericInputPrompt 
-            placeholderPrompt={placeholderPrompt}
-            handlePress={handlePress}
-            />}
+            goTo={"AddExpense"}/>
+            
+            <GenericTitle titleText = {subtitle2} alignment="left"/>
+            <GenericButton
+            navigation={navigation}
+            goTo={"AddIncome"}/>
         </View>
     );
   }

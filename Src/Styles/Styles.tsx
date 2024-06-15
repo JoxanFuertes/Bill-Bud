@@ -17,8 +17,12 @@ const ViewStyle = StyleSheet.create({
         color : "white",
         fontSize: 20,
     },  
-    container : {
+    containerCenter : {
         alignItems: "center"
+    },
+    containerLeft : {
+        alignItems: "flex-start",
+        flex: 1
     },
     buttonImage : {
         aspectRatio : 1,
@@ -28,12 +32,14 @@ const ViewStyle = StyleSheet.create({
     buttonImageContainer : {
         alignItems: "flex-end",
         paddingRight : 20,
-        paddingTop : 80,
+        paddingTop : 0,
     },
     promptContainer : {
         paddingLeft : 20,
         paddingRight : 20,
         paddingTop : 20,
+        flex: 1,
+        justifyContent: "center",
     }
 });
 

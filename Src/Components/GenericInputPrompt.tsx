@@ -16,7 +16,9 @@ export default function GenericInputPrompt(propos: any){
             />
             <Button title={"submit"}
             onPress={() => {
-            propos.handlePress(submitedText)}}
+            propos.handlePress(submitedText); 
+            setSubmitedText("");
+            }}
             />
             {submitedText ? <Text>{submitedText}</Text> : null}
         </View>    
