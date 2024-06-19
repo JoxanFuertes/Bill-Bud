@@ -40,7 +40,17 @@ const ViewStyle = StyleSheet.create({
         paddingTop : 20,
         flex: 1,
         justifyContent: "center",
-    }
+    },
+    dropdownContainer : {
+        paddingLeft : 20,
+        paddingRight : 20,
+        paddingTop : 20,
+        flex: 1,
+        justifyContent: "center",
+    },
+    dropdown : {
+        backgroundColor : "rgb(33, 150, 243)",
+    },
 });
 
 export default ViewStyle;

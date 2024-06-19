@@ -5,7 +5,7 @@ import styles from "../Styles/Styles";
 
 /* 
 
-1) create a combo box for category
+1) finish seting up a combo box for category
 2) make all combo box elements selectable, but the last one
     opens another window
 3) in expense relevance view: a list for all categories each of each has
