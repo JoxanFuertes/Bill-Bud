@@ -15,7 +15,7 @@ export default function AddExpenseCategory({navigation} : any) {
     };
 
     return (
-        <View style={StyleView.view}>
+        <View style={StyleView.viewContainer}>
             <GenericTitle titleText = {titleText} alignment = {"center"}/>
             <GenericInputPrompt 
             placeholderPrompt={placeholder1}

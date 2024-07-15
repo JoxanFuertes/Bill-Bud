@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, TextInput, View, Text} from "react-native";
+import { Button, TextInput, View, Text, TouchableOpacity} from "react-native";
 import styles from "../Styles/Styles";
 
 export default function GenericInputPrompt(propos: any){
@@ -14,12 +14,14 @@ export default function GenericInputPrompt(propos: any){
                 onChangeText={setSubmitedText}
                 style={styles.text}
             />
-            <Button title={"submit"}
+            <TouchableOpacity
+            style={styles.genericTouchableOpacity}
             onPress={() => {
             propos.handlePress(submitedText); 
             setSubmitedText("");
-            }}
-            />
+            }}>
+                <Text style={styles.genericTouchableOpacityText}>Submit</Text>
+            </TouchableOpacity>
             {submitedText ? <Text>{submitedText}</Text> : null}
         </View>    
     )

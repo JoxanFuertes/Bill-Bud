@@ -8,7 +8,7 @@ export default function IncomeRelevance({navigation} : any) {
     const titleText = "IncomeRelevance section"
     const viewButtonName = "Home"
     return (
-        <View style={StyleView.view}>
+        <View style={StyleView.viewContainer}>
             <GenericTitle titleText = {titleText} alignment = {"center"}/>
             <GenericButton navigation={navigation} viewButtonName={viewButtonName}/>
         </View>

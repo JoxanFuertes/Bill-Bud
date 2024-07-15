@@ -1,7 +1,7 @@
 import {Image, TouchableOpacity, View } from "react-native";
 import styles from "../Styles/Styles"
 
-export default function GenericButton (propos: any){
+export default function GenericAddButton (propos: any){
     return (
         <View style={styles.buttonImageContainer}>
             <TouchableOpacity 

@@ -1,9 +1,14 @@
 import { StyleSheet } from "react-native";
 
 const ViewStyle = StyleSheet.create({
-    view : {
-        backgroundColor : "black",
-        flex: 1
+    keyboardAvoidingContainer: {
+        flex: 1,
+        backgroundColor: "black",
+    },
+    viewContainer: {
+        flex: 1,
+        paddingHorizontal: 20,
+        backgroundColor: "black"
     },
     titleText : {
         fontFamily: "Franklin Gothic Demi",
@@ -32,24 +37,45 @@ const ViewStyle = StyleSheet.create({
     buttonImageContainer : {
         alignItems: "flex-end",
         paddingRight : 20,
-        paddingTop : 0,
+        width: "100%",
+        marginBottom: 10,
     },
-    promptContainer : {
-        paddingLeft : 20,
-        paddingRight : 20,
-        paddingTop : 20,
-        flex: 1,
-        justifyContent: "center",
+    promptContainer: {
+        width: "100%",
+        marginBottom: 10,
     },
-    dropdownContainer : {
-        paddingLeft : 20,
-        paddingRight : 20,
-        paddingTop : 20,
-        flex: 1,
-        justifyContent: "center",
+    genericDropdown : {
+        backgroundColor: '#007BFF',
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderRadius: 5,
+        marginVertical: 10,
+        borderWidth: 1,
+        borderColor: "white",
     },
-    dropdown : {
-        backgroundColor : "rgb(33, 150, 243)",
+    genericDropdownText: {
+        color: '#',
+        fontSize: 16,
+        fontWeight: 'bold',
+    },
+    genericDropdownArrow:{
+        color : "white"
+    },
+    genericTouchableOpacity: {
+        backgroundColor: '#007BFF',
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderRadius: 5,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginVertical: 10,
+        borderWidth: 1,
+        borderColor: "white",
+    },
+    genericTouchableOpacityText: {
+        color: '#FFFFFF',
+        fontSize: 16,
+        fontWeight: 'bold',
     },
 });
 
